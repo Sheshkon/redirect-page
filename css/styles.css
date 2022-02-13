@@ -1,11 +1,10 @@
 .img-thumbnail {
     display: none;
     border: 1px solid #0d6efd;  
-    transition: 1s; /* Время эффекта */
+    transition: 1s;
  }
 
  .img-thumbnail:hover {
-    transform: scale(1.4); /* Увеличиваем масштаб */
+    transform: scale(1.4);
    }
-
  

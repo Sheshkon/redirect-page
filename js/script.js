@@ -6,7 +6,7 @@ if(ROOM){
     console.log(`tetris://${ROOM}`);
 }
 
-$(window).ready(function(){
+$(document).ready(function(){
     $('.img-thumbnail').on('load',function(){
         $('.spinner-border').fadeOut(0);
         $('.img-thumbnail').fadeIn(1000)

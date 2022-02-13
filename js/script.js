@@ -1,6 +1,14 @@
 const URL_PARAMS = new URLSearchParams(window.location.search);
 const ROOM = URL_PARAMS.get('room');
 
-if(ROOM)
+if(ROOM){
     window.location.replace(`tetris://${ROOM}`);
     console.log(`tetris://${ROOM}`);
+}
+
+$(window).ready(function(){
+    $('.img-thumbnail').on('load',function(){
+        $('.spinner-border').fadeOut(0);
+        $('.img-thumbnail').fadeIn(1000)
+    });
+});

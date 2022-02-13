@@ -1,4 +1,5 @@
-# Redirect page
+# redirect-page
+
 Temporary page to redirect to [tetris game](https://github.com/vitaliysheshkoff/Tetris-Multiplayer). A full-fledged website will be written in the future.
 
 :link: [custom protocol](https://medium.com/swlh/custom-protocol-handling-how-to-8ac41ff651eb)

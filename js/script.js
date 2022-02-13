@@ -7,16 +7,16 @@ if(ROOM){
 }
 
 function disableSpinners() {
-    $('.img-thumbnail').on('load',function(){
-        $('.spinner-border').fadeOut(0);
-        $('.img-thumbnail').fadeIn(1000)
-    });
+    $('.spinner-border').fadeOut(0);
+    $('.img-thumbnail').fadeIn(1000)
   }
 
 $(window).on('load',function() {
-    disableSpinners()
+    $('.img-thumbnail').on('load',function(){
+        disableSpinners()
+    });
 });
 
 $( document ).ready(function() { 
-    disableSpinners()
+   disableSpinners()
 });

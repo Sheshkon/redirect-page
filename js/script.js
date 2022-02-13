@@ -6,9 +6,17 @@ if(ROOM){
     console.log(`tetris://${ROOM}`);
 }
 
-$(document).ready(function(){
+function disableSpinners() {
     $('.img-thumbnail').on('load',function(){
         $('.spinner-border').fadeOut(0);
         $('.img-thumbnail').fadeIn(1000)
     });
+  }
+
+$(window).on('load',function() {
+    disableSpinners()
+});
+
+$( document ).ready(function() { 
+    disableSpinners()
 });

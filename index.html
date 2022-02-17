@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
-    <title>Tetris site</title>
-     <!-- Bootstrap CSS -->
+    <title>Tetris</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- jQurery> -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Scrol Out -->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">Tetris</a>
+            <a href="#" class="navbar-brand"><img src="img/logo.png" width="93" height="17"></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="#" class="nav-item nav-link active">Home</a>
                     <a href="#" class="nav-item nav-link">About</a>
                     <a href="#" class="nav-item nav-link">Contact</a>
-                    <a href="#" class ="nav-item nav-link">Screenshots</a>
+                    <a href="#" class="nav-item nav-link">Screenshots</a>
                 </div>
                 <div class="navbar-nav ms-auto">
                     <a href="#" class="nav-item nav-link">Register</a>
@@ -34,194 +40,134 @@
             </div>
         </div>
     </nav>
-    
-    <div class="transparent-bg">
-        <video id="background-video" autoplay loop muted poster="img/frame0.png">
-            <source src="video/preview1.mp4" type="video/mp4">
-        </video>
-            <div class="container text-center rounded-3" id="transparent-bg">
-        <div class="p-2 my-2 mt-2 text-center rounded-3">
-            <h1 class="animate__animated animate__fadeInDown display-1">Tetris Game</h1>
-            
-            <p class="lead text-center my-3">The best multiplayer tetris game. At <a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer" class="text-success" target="_blank">https://github.com/tetris</a> you can find main developer and see source code.
-               At <a href="https://t.me/tetris_game_tetris_bot?start=null" class="text-success" target="_blank">https://t.me/tetris</a> you can find all updates, news and find an apponent for multiplayer game </p>
-               <br>
-               <div class="row"">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3"></div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6"><a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer/raw/resize_network_multiplayer_branch/out/artifacts/Tetris_Multiplayer_jar/installer/tetrisSetup.exe" target="_blank" class="btn btn-primary btn-lg">Download for Windows</a></div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6"><a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer/raw/resize_network_multiplayer_branch/out/artifacts/Tetris_Multiplayer_jar/Tetris-Multiplayer.jar" target="_blank" class="btn btn-primary btn-lg">Download for Linux/Mac </a></div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3"></div>
-                </div>
-</div>
-    
 
-    <br>
-    <br>
-    <div class="container text-center rounded-3" id="transparent-bg">
+    <video id="background-video" class="vid-pc" autoplay loop muted poster="img/frame0.jpg">
+        <source src="video/preview.mp4" type="video/mp4">
+    </video>
+    <video id="background-video" class="vid-mobi" autoplay loop muted poster="img/frame0(mobile).jpg">
+        <source src="video/preview(mobile).mp4" type="video/mp4">
+    </video>
+
+    <div class="container text-center" id="padding-div">
+        <div class="container text-center animate__animated animate__zoomInDown ">
+            <h1>TETRIS GAME</h1>
+            <div class="col-12 d-flex justify-content-center">
+                <a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer#download" target="_blank" class="btn btn-white btn-animate">Get
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+     <div class="container text-center" id="main">
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Bot with AI</h2>
                 <p>Bot for training to play with.</p>
-                <p><a href="#bot-ai" class="btn btn-primary">Learn More &raquo;</a></p>
+                <a href="#bot-ai" class="btn btn-primary">Learn More &raquo;</a>
             </div>
+
             <div class="col-lg-4 col-md-4">
                 <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Multiplayer</h2>
                 <p>Play with your friends!</p>
-                <p><a href="#multiplayer" class="btn btn-primary">Learn More &raquo;</a></p>
+                <a href="#multiplayer" class="btn btn-primary">Learn More &raquo;</a>
             </div>
+
             <div class="col-lg-4 col-md-4">
                 <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Telegram bot</h2>
                 <p>Updates, news, and opponents for game.</p>
-                <p><a href="#telegram-bot" class="btn btn-primary">Learn More &raquo;</a></p>
+                <a href="#telegram-bot" class="btn btn-primary">Learn More &raquo;</a>
             </div>
         </div>    
+    </div> 
+-->
+
+    <div class="col-md-12" id="padding-div">
+        <h1 class="show-out">AI algorithm</h1>
+        <!-- <div class="show-out"> -->
+        <p align="justify" id="text-padding">
+            When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+            Fitness function parameters:
+        </p>
+        <dl class="row cent">
+            <dt class="col-sm-5" id="text-padding"> Height</dt>
+            <dd class="col-sm-7">Maximum height of the grid.</dd>
+            <dt class="col-sm-5" id="text-padding">Aggregate Height</dt>
+            <dd class="col-sm-7">The sum of the height of each column.</dd>
+            <dt class="col-sm-5" id="text-padding">Cleared lines</dt>
+            <dd class="col-sm-7">Number of complete lines in the grid.</dd>
+            <dt class="col-sm-5" id="text-padding">Number of holes</dt>
+            <dd class="col-sm-7">Empty space such that there is at least one tile in the same column above.</dd>
+            <dt class="col-sm-5" id="text-padding">Bumpiness</dt>
+            <dd class="col-sm-7">Sum of the difference between heights of adjacent pairs of columns.</dd>
+        </dl>
     </div>
-        </div>
+
+    <div class="col-md-12" id="padding-div">
+        <h1 class="show-out">Multiplayer</h1>
+        <p align="justify" id="text-padding">AI algorithm
+            When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+            Fitness function parameters:
+            Height - maximum height of the grid.
+            Aggregate Height - the sum of the height of each column.
+            Number of lines cleared - the number of complete lines in the grid.
+            Number of holes - empty space such that there is at least one tile in the same column above.
+            Bumpiness - sum of the difference between heights of adjacent pairs of columns.
+        </p>
+    </div>
+
+    <div class="col-md-12" id="padding-div">
+        <h1 class="show-out">Telegram Bot</h1>
+        <p align="justify" id="text-padding">
+            When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+            Fitness function parameters:
+            Height - maximum height of the grid.
+            Aggregate Height - the sum of the height of each column.
+            Number of lines cleared - the number of complete lines in the grid.
+            Number of holes - empty space such that there is at least one tile in the same column above.
+            Bumpiness - sum of the difference between heights of adjacent pairs of columns.
+        </p>
     </div>
 
 
-   
-    <div class="show-out"><a name="bot-ai"></a>
-        <div class="p-3 my-3 mt-3 col-md-12 ">
-            <h1 class="display-1">AI algorithm</h1>
-            <p align="justify" id="text-padding">
-                When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
-                Fitness function parameters:
-                <dl class="row cent">
-                    <dt class="col-sm-5" id="text-padding"> Height</dt>
-                    <dd class="col-sm-7">Maximum height of the grid.</dd>
-                    <dt class="col-sm-5" id="text-padding">Aggregate Height</dt>
-                    <dd class="col-sm-7">The sum of the height of each column.</dd>
-                    <dt class="col-sm-5" id="text-padding">Cleared lines</dt>
-                    <dd class="col-sm-7">Number of complete lines in the grid.</dd>
-                    <dt class="col-sm-5" id="text-padding">Number of holes</dt>
-                    <dd class="col-sm-7">Empty space such that there is at least one tile in the same column above.</dd>
-                    <dt class="col-sm-5" id="text-padding">Bumpiness</dt>
-                    <dd class="col-sm-7">Sum of the difference between heights of adjacent pairs of columns.</dd>
-                </dl>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-        <div class="show-out"><a name="multiplayer"></a>
-            <div class="col-md-12">
-                <h1 class="display-1">Multiplayer</h1>
-                <p align="justify" id="text-padding">AI algorithm
-                    When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+<!--
 
-                    Fitness function parameters:
-                    Height - maximum height of the grid.
-                    Aggregate Height - the sum of the height of each column.
-                    Number of lines cleared - the number of complete lines in the grid.
-                    Number of holes - empty space such that there is at least one tile in the same column above.
-                    Bumpiness - sum of the difference between heights of adjacent pairs of columns.</p>
-            </div>
-        </div>
-        
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>    
-    <div class="show-out"><a name="telegram-bot"></a>
+    <div id="padding-div">
+        <h1 class="show-out">Gameplay</h1>
         <div class="col-md-12">
-            <h1 class="display-1">Telegram Bot</h1>
-            <p align="justify" id="text-padding">
-                When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+            <img id="img" src="gif/bg.gif" class="img-thumbnail" alt="Main menu" id="bg-gif">
+        </div>
+    </div>
+-->
 
-                Fitness function parameters:
-                Height - maximum height of the grid.
-                Aggregate Height - the sum of the height of each column.
-                Number of lines cleared - the number of complete lines in the grid.
-                Number of holes - empty space such that there is at least one tile in the same column above.
-                Bumpiness - sum of the difference between heights of adjacent pairs of columns.</p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>   
-    <h1 class="p-3 my-3 mt-3 display-1">Gameplay</h1>
-	<!-- <div class="lead text-center my-3">Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works.</div> -->
-    <div class="container-lg">
-        <div class="row p-3 my-3 mt-3">
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6 ">
-                <img src="img/main_menu.png" class="img-thumbnail" alt="Main menu" id="image">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/options.png" class="img-thumbnail" alt="Options">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/leaderboard.png" class="img-thumbnail" alt="Leaderboard">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/singleplay.png" class="img-thumbnail" alt="Single play">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/multiplayer_menu.png" class="img-thumbnail" alt="Multiplayer menu">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/multiplayer_bot_game.png" class="img-thumbnail" alt="Multiplayer game with bot">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/request.png" class="img-thumbnail" alt="Telegram request">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-6"><img src="img/accept_request.png" class="img-thumbnail" alt="Accept Telegram request">
-                <div class="spinner-border text-primary"></div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-md-12 col-sm-12 col-12"><img src="img/telegram_bot.png" class="img-thumbnail" alt="Telegram bot">
-                <div class="spinner-border text-primary"></div>
-            </div>
-        </div>
-    </div>
-    
-    <button type="button" class="btn btn-primary" onclick="showTitle('myClass')">Primary</button>
+
+
+
 
 
     <hr>
     <footer>
         <div class="row">
             <div class="col-md-12 text-md-end">
-                <a href="#" class="text-dark">github</a> 
-                <span class="text-muted mx-2">|</span> 
+                <a href="#" class="text-dark">github</a>
+                <span class="text-muted mx-2">|</span>
                 <a href="#" class="text-dark">telegram</a>
             </div>
         </div>
     </footer>
-</div>
 
-<!-- Bootstrap JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
-<script src="js/scrolOut.js"></script>
 
-</body>
 
-</html>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+</body></html>

@@ -1,30 +1,34 @@
 const URL_PARAMS = new URLSearchParams(window.location.search);
 const ROOM = URL_PARAMS.get('room');
 
+ScrollOut({
+    targets: ".show-out",
+    onShown: function (el) {
+        el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+        el.style.setProperty('--animate-duration', '2s');
+        el.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
 
-function disableSpinners() {
-    $('.spinner-border').fadeOut(0);
-    $('.img-thumbnail').fadeIn(1000)
-  }
+        // force reflow
+        void el.offsetWidth;
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-
-
-$(window).on('load',function() {
-    $('.img-thumbnail').on('load',function(){
-        disableSpinners()
-    });
+        // re-add the animated cl
+        el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+    }
 });
 
-$( document ).ready(function() { 
-    disableSpinners()
-});
 
-if(ROOM){
+
+//$(window).on('load', function () {
+//    $('.img-thumbnail').on('load', function () {
+//       
+//    });
+//});
+//
+//$(document).ready(function () {
+//  
+//});
+
+if (ROOM) {
     window.location.replace(`tetris://${ROOM}`);
     console.log(`tetris://${ROOM}`);
 }
-

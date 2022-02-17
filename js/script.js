@@ -5,7 +5,7 @@ ScrollOut({
     targets: ".show-out",
     onShown: function (el) {
         el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
-        el.style.setProperty('--animate-duration', '2s');
+        // el.style.setProperty('--animate-duration', '2s');
         el.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
 
         // force reflow
@@ -15,7 +15,6 @@ ScrollOut({
         el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
     }
 });
-
 
 
 //$(window).on('load', function () {

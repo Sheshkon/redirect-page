@@ -51,7 +51,7 @@ body {
 }
 
 video {
-    -webkit-filter: blur(5px);
+   filter: blur(5px);
 }
 
 #background-video {
@@ -199,4 +199,8 @@ h6,
 
 #bg-gfi{
     margin: 0, auto;
+}
+
+hr{
+    color: white;
 }

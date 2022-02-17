@@ -1,0 +1,22 @@
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 100px;
+}
+.field {
+    margin: 15px 0;
+    box-shadow: 10px 10px 7px #000000;
+    height: 50px;
+    border-radius: 25px;
+    border-color: #000000;
+}
+
+#message {
+   height: 200px;
+}
+
+#submit{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

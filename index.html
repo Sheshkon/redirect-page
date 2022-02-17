@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                 <div class="navbar-nav">
                     <a href="#" class="nav-item nav-link active">Home</a>
                     <a href="#" class="nav-item nav-link">About</a>
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="#submit" class="nav-item nav-link">Contact</a>
                     <a href="#" class="nav-item nav-link">Screenshots</a>
                 </div>
                 <div class="navbar-nav ms-auto">
@@ -142,20 +143,34 @@
 -->
 
 
-
-
-
-
-    <hr>
-    <footer>
+<div clas="contact-form">
+    <form>
         <div class="row">
-            <div class="col-md-12 text-md-end">
-                <a href="#" class="text-dark">github</a>
-                <span class="text-muted mx-2">|</span>
-                <a href="#" class="text-dark">telegram</a>
-            </div>
+            <h2 align="center">CONTACT US</h2>
+            <input type="text" class="field" placeholder="Your Name">
+            <input type="email" class="field" placeholder="Your Email">
+            <textarea class="field" placeholder="Message" id="message"></textarea>
+            <div class=" d-flex justify-content-end">
+                <a href="#" class="btn btn-white btn-animate" id="submit">send</a>
+            </div>       
+         </div>
+    </form>
+    </div>
+</div>
+
+
+
+
+<hr>
+<footer>
+    <div class="row">
+        <div class="col-md-12 text-md-end">
+            <a href="#">github</a>
+            <span class="text-muted mx-2">|</span>
+            <a href="#">telegram</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
@@ -166,7 +181,7 @@
     <script src="js/script.js"></script>
 
 
-
+    
 
 
 

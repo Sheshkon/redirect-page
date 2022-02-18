@@ -1,18 +1,28 @@
 const URL_PARAMS = new URLSearchParams(window.location.search);
 const ROOM = URL_PARAMS.get('room');
 
+
+
 ScrollOut({
-    targets: ".show-out",
+    targets: '.show-out',
     onShown: function (el) {
-        el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+        var animation = ''
+        if(el.tagName == "H2")
+            animation = 'animate__shakeY'
+        else
+            animation = 'animate__lightSpeedInLeft'
+        
+        // console.log(typeof el.tagName)
+    
+        el.classList.add('animate__animated', animation);
         // el.style.setProperty('--animate-duration', '2s');
-        el.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
+        el.classList.remove('animate__animated', animation);
 
         // force reflow
         void el.offsetWidth;
 
         // re-add the animated cl
-        el.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+        el.classList.add('animate__animated', animation);
     }
 });
 

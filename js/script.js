@@ -7,12 +7,11 @@ ScrollOut({
     targets: '.show-out',
     onShown: function (el) {
         var animation = ''
-        if(el.tagName == "H2")
+        if (el.tagName == "H2")
             animation = 'animate__shakeX'
         else
             animation = 'animate__lightSpeedInLeft'
-        
-    
+
         el.classList.add('animate__animated', animation);
         // el.style.setProperty('--animate-duration', '2s');
         el.classList.remove('animate__animated', animation);
@@ -24,6 +23,14 @@ ScrollOut({
         el.classList.add('animate__animated', animation);
     }
 });
+
+
+function uploadFile(target) {
+    var el = document.getElementById("file-name");
+    el.innerHTML = target.files[0].name;
+    el.style.opacity = "1";
+
+}
 
 
 //$(window).on('load', function () {

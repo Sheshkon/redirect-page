@@ -8,7 +8,7 @@ ScrollOut({
     onShown: function (el) {
         var animation = ''
         if(el.tagName == "H2")
-            animation = 'animate__shakeY'
+            animation = 'animate__shakeX'
         else
             animation = 'animate__lightSpeedInLeft'
         

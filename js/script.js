@@ -12,7 +12,6 @@ ScrollOut({
         else
             animation = 'animate__lightSpeedInLeft'
         
-        // console.log(typeof el.tagName)
     
         el.classList.add('animate__animated', animation);
         // el.style.setProperty('--animate-duration', '2s');

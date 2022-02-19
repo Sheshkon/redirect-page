@@ -144,8 +144,10 @@ h6,
 }
 
 .btn-white {
-    background-color: #fff;
+    background-color: black;
+    background-image: url("../img/form_bg1.png");
     color: black;
+    text-shadow: 10px 10px 7px black; 
 }
 
 .btn::after {
@@ -162,7 +164,8 @@ h6,
 }
 
 .btn-white::after {
-    background-color: #fff; 
+    background-color: black; 
+    background-image: url("../img/form_bg1.png");
 }
 
 .btn:hover::after {

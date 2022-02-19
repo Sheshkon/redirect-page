@@ -12,12 +12,13 @@ form {
     border-width: 5px;
     border-radius: 25px;
     border-color: #000000;
-    background-color: rgb(0, 0, 0);
-    background-image: url("../img/form_bg1.png");
+    /* background-color: rgb(0, 0, 0); */
+    background-color: white;
+    /* background-image: url("../img/form_bg1.png"); */
     opacity: 1;
     color: black;
     filter:contrast(200%);
-    text-shadow: 0px 0px 7px white;
+    /* text-shadow: 0px 0px 7px white; */
     
 }
 
@@ -62,10 +63,10 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     border-width: 5px;
     background-color: rgb(2, 2, 2);
-    background-image: url("../img/form_bg1.png");
+    /* background-image: url("../img/form_bg1.png"); */
     border-radius: 25px;
     filter:contrast(200%);
-    text-shadow: 0px 0px 7px white;
+    color: white;
 }
 
 .inputfile-box {

@@ -12,7 +12,7 @@ form {
     border-width: 5px;
     border-radius: 25px;
     border-color: #000000;
-    background-color: rgb(83, 82, 82);
+    background-color: rgb(0, 0, 0);
     background-image: url("../img/form_bg1.png");
     opacity: 1;
     color: black;
@@ -24,6 +24,10 @@ form {
 textarea::-webkit-scrollbar {
     width: 1em;
 }
+
+input.no-autofill-bkg:-webkit-autofill {
+    -webkit-background-clip: text;
+  }
 
 textarea::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px transparent;

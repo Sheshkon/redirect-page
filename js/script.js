@@ -29,6 +29,9 @@ function uploadFile(target) {
     var el = document.getElementById("file-name");
     el.innerHTML = target.files[0].name;
     el.style.opacity = "1";
+    el = document.getElementsByClassName('file-button')[0];
+    console.log(el);
+    el.style.color = "transparent";
 
 }
 

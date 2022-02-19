@@ -92,7 +92,7 @@ video {
     }
 }
 
-#padding-div {
+.custom-div {
     margin: 0, auto;
     padding-top: 15%;
     padding-bottom: 15%;
@@ -210,4 +210,12 @@ h6,
 
 hr{
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-div{
+        padding-top: 50%;
+        padding-bottom: 90%;
+    }
+    
 }

@@ -17,26 +17,27 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/brick.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand"><img src="img/logo.png" width="93" height="17"></a>
+            <div class="navbar-brand"><img src="img/logo.png" width="93" height="17"></div>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">About</a>
+                    <!-- <a href="#" class="nav-item nav-link active">Home</a> -->
+                    <a href="#about" class="nav-item nav-link">About</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
-                    <a href="#" class="nav-item nav-link">Screenshots</a>
+                    <!-- <a href="#" class="nav-item nav-link">Screenshots</a> -->
                 </div>
                 <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Register</a>
-                    <a href="#" class="nav-item nav-link">Login</a>
+                    <a href="https://t.me/tetris_game_tetris_bot?start=null" class="nav-item nav-link" target="_blank"><img src="https://platform-cdn.sharethis.com/img/telegram.svg" width="32"></a>
+                    <a href="https://github.com/vitaliysheshkoff" class="nav-item nav-link" target="_blank"><img src="img/GitHub-Mark-Light-64px.png" width="32"></a>
                 </div>
             </div>
         </div>
@@ -49,7 +50,7 @@
         <source src="video/preview(mobile).mp4" type="video/mp4">
     </video>
 
-    <div class="container text-center" id="padding-div">
+    <div class="container text-center custom-div">
         <div class="container text-center animate__animated animate__zoomInDown ">
             <h1>TETRIS GAME</h1>
             <div class="col-12 d-flex justify-content-center">
@@ -59,36 +60,10 @@
         </div>
     </div>
 
-
-    <!--
-     <div class="container text-center" id="main">
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Bot with AI</h2>
-                <p>Bot for training to play with.</p>
-                <a href="#bot-ai" class="btn btn-primary">Learn More &raquo;</a>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Multiplayer</h2>
-                <p>Play with your friends!</p>
-                <a href="#multiplayer" class="btn btn-primary">Learn More &raquo;</a>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h2 class="display-5 align-items-center animate__animated animate__fadeInDown">Telegram bot</h2>
-                <p>Updates, news, and opponents for game.</p>
-                <a href="#telegram-bot" class="btn btn-primary">Learn More &raquo;</a>
-            </div>
-        </div>    
-    </div> 
--->
-
-    <div class="col-md-12" id="padding-div">
-        <h1 class="show-out">AI algorithm</h1>
-        <!-- <div class="show-out"> -->
+    <div class="col-md-12 custom-div">
+        <h1 class="show-out" id="about">AI algorithm</h1>
         <p align="justify" id="text-padding">
-            When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
+            The app provides a game with a bot. The bot analyzes the playing field and when all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and makes all the necessary moves.
             Fitness function parameters:
         </p>
         <dl class="row cent">
@@ -103,9 +78,18 @@
             <dt class="col-sm-5" id="text-padding">Bumpiness</dt>
             <dd class="col-sm-7">Sum of the difference between heights of adjacent pairs of columns.</dd>
         </dl>
+        <div class="bricks">
+            <div>
+                <img src="img/brick.png" id="left-brick">
+                <iframe class="video-brick"  src="https://www.youtube.com/embed/PIeq2S0EXQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <!-- <a href="#" class="brick-link">demo<img src="https://www.youtube.com/s/desktop/40777624/img/favicon_96x96.png" id="brick-img"></a> -->
+                <img src="img/brick.png" id="right-brick">
+            </div>
+        </div>
     </div>
 
-    <div class="col-md-12" id="padding-div">
+    <div class="col-md-12 custom-div">
         <h1 class="show-out">Multiplayer</h1>
         <p align="justify" id="text-padding">AI algorithm
             When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
@@ -118,7 +102,7 @@
         </p>
     </div>
 
-    <div class="col-md-12" id="padding-div">
+    <div class="col-md-12 custom-div">
         <h1 class="show-out">Telegram Bot</h1>
         <p align="justify" id="text-padding">
             When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
@@ -130,18 +114,6 @@
             Bumpiness - sum of the difference between heights of adjacent pairs of columns.
         </p>
     </div>
-
-
-    <!--
-
-    <div id="padding-div">
-        <h1 class="show-out">Gameplay</h1>
-        <div class="col-md-12">
-            <img id="img" src="gif/bg.gif" class="img-thumbnail" alt="Main menu" id="bg-gif">
-        </div>
-    </div>
--->
-
 
     <div class="contact-form" id="contact">
         <h2 align="center" class="show-out">CONTACT US</h2>
@@ -170,7 +142,7 @@
 
 
     <hr>
-    <footer>
+    <!-- <footer>
         <div class="row">
             <div class="col-md-12 text-md-end">
                 <a href="#">github</a>
@@ -178,7 +150,7 @@
                 <a href="#">telegram</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 

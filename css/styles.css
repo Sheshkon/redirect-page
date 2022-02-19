@@ -120,6 +120,9 @@ h6,
 .btn {
     box-shadow: 10px 10px 7px #000000;
     font-weight: 1000;
+    border-color: white;
+    border-width: 5px;
+    color: white;
 }
 
 .btn:link,
@@ -136,6 +139,7 @@ h6,
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .btn:active {
@@ -144,9 +148,9 @@ h6,
 }
 
 .btn-white {
-    background-color: black;
+    background-color: black; 
     background-image: url("../img/form_bg1.png");
-    color: black;
+    color: white;
     text-shadow: 10px 10px 7px black; 
 }
 

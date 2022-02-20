@@ -2,7 +2,6 @@ const URL_PARAMS = new URLSearchParams(window.location.search);
 const ROOM = URL_PARAMS.get('room');
 
 
-
 ScrollOut({
     targets: '.show-out',
     onShown: function (el) {

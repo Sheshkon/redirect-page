@@ -1,96 +1,89 @@
-.bricks{
+.bricks {
     position: relative;
     display: inline-block;
-    height:50px;
+    height: 50px;
 }
 
-.video-brick{
+.video-brick {
     opacity: 0;
-    position:absolute;
+    position: absolute;
     display: none;
 }
 
 
-.bricks #right-brick{
+.bricks #left-brick,
+#right-brick {
     transition: 1.5s;
     /* transition-timing-function: linear; */
-    animation-play-state: paused;
-
 }
 
-.bricks:hover{
-    width:250px;
+.bricks:hover {
+    width: 250px;
 }
 
-/* .bricks:hover #right-brick{
-    transform: translate(200px, 0px) rotate(2.5turn);    
-} */
-
-
-.bricks:hover .video-brick{
+.bricks:hover .video-brick {
     display: inline;
     opacity: 1;
 }
 
-.bricks:hover #right-brick{
-    transform: translate(505px, 265px) rotate(20turn) ;
-    tra: paused;    
+.bricks:hover #left-brick {
+    transform: rotate(20turn);
 }
 
-
-
 @media only screen and (max-width: 600px) {
-    .video-brick{
+    .video-brick {
         width: 80% !important;
         height: auto !important;
         transform: translate(-50px, 50px);
     }
-    .bricks:hover #right-brick{
-        transform: translate(105px, 210px) rotate(20turn) !important;       
+
+    .bricks:hover #right-brick {
+        transform: translate(105px, 210px) rotate(20turn) !important;
     }
-    
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 700px) {
-    .video-brick{
+    .video-brick {
         width: 300px !important;
         height: 175px !important;
     }
-    .bricks:hover #right-brick{
-        transform: translate(305px, 135px) rotate(20turn) !important;    
+
+    .bricks:hover #right-brick {
+        transform: translate(305px, 135px) rotate(20turn) !important;
     }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 800px) {
-    .video-brick{
+    .video-brick {
         width: 400px !important;
         height: 260px !important;
     }
-    .bricks:hover #right-brick{
-        transform: translate(405px, 220px) rotate(20turn) !important;    
+
+    .bricks:hover #right-brick {
+        transform: translate(405px, 220px) rotate(20turn) !important;
     }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-    .video-brick{
+    .video-brick {
         width: 450px !important;
         height: 300px !important;
     }
-    .bricks:hover #right-brick{
-        transform: translate(455px, 265px) rotate(20turn) !important;  
+
+    .bricks:hover #right-brick {
+        transform: translate(455px, 265px) rotate(20turn) !important;
     }
-    
+
 }
 
 @media only screen and (min-width: 1200px) {
-    .video-brick{
+    .video-brick {
         width: 640px !important;
         height: 400px !important;
     }
-    .bricks:hover #right-brick{
-        transform: translate(645px, 365px) rotate(20turn) !important;  
-        animation-play-state: running;    
+
+    .bricks:hover #right-brick {
+        transform: translate(645px, 365px) rotate(20turn) !important;
     }
 }
-
-

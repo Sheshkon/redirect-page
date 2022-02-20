@@ -1,3 +1,7 @@
+* {
+    font-weight: 1000;
+}
+
 .img-thumbnail {
     background-color: transparent;
     border: transparent;
@@ -22,6 +26,10 @@ dd {
     color: rgb(255, 255, 255);
     font-style: normal;
     text-shadow: 10px 10px 7px #000000;
+}
+
+dd {
+    text-align: justify;
 }
 
 h1 {
@@ -51,7 +59,7 @@ body {
 }
 
 video {
-   filter: blur(5px);
+    filter: blur(5px);
 }
 
 #background-video {
@@ -79,17 +87,21 @@ video {
     margin-left: 1rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .vid-mobi {
         display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
-
     .vid-pc {
         display: none;
     }
+}
+
+.main-div {
+     padding-top: 15%;
+     padding-bottom: 25%;
 }
 
 .custom-div {
@@ -98,23 +110,7 @@ video {
     padding-bottom: 15%;
     padding-left: 15%;
     padding-right: 15%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,    
-
-* {
-    font-weight: 1000;
+    text-align: justify;
 }
 
 .btn {
@@ -148,15 +144,15 @@ h6,
 }
 
 .btn-white {
-    background-color: black; 
-    background-image: url("../img/form_bg1.png");
+    background-color: black;
+    background-image: url("../img/form_bg.png");
     color: white;
-    text-shadow: 10px 10px 7px black; 
+    text-shadow: 10px 10px 7px black;
 }
 
 .btn::after {
     content: "";
-    display:inline-block;
+    display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 100px;
@@ -168,8 +164,8 @@ h6,
 }
 
 .btn-white::after {
-    background-color: black; 
-    background-image: url("../img/form_bg1.png");
+    background-color: black;
+    background-image: url("../img/form_bg.png");
 }
 
 .btn:hover::after {
@@ -194,28 +190,18 @@ h6,
     }
 }
 
-
-
-#bannerimage {
-    background-image: url('../img/accept_request.png');
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: contain;
-}
-
-#bg-gfi{
-    margin: 0, auto;
-}
-
-hr{
+hr {
     color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .custom-div{
-        padding-top: 50%;
-        padding-bottom: 90%;
+    .custom-div {
+        padding-top: 20%;
+        padding-bottom: 40%;
     }
     
+    .main-div{
+        padding-top: 30%;
+        padding-bottom: 150%;
+    }
 }

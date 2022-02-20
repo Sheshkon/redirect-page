@@ -1,5 +1,5 @@
 * {
-    font-weight: 1000;
+    font-weight: 1000 !important;
 }
 
 .img-thumbnail {
@@ -205,3 +205,22 @@ hr {
         padding-bottom: 150%;
     }
 }
+
+.dropdown:hover .dropdown-menu {
+    background-color: #000000;
+    display: block;
+    margin-top: 0; 
+    border-radius:10px ;
+ }
+
+ ul.dropdown-menu > li > a{
+    color: white;
+ }
+
+
+ ul.dropdown-menu > li > a:hover{
+    color: black;
+    background: white !important;
+    border-radius:10px ;
+}
+

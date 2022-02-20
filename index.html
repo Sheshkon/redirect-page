@@ -29,8 +29,15 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#about" class="nav-item nav-link">About</a>
+                <div class="navbar-nav"> 
+                    <div class="dropdown">
+                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" class="nav-item nav-link">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#ai">AI</a></li>
+                          <li><a class="dropdown-item" href="#multiplayer">Multiplayer</a></li>
+                          <li><a class="dropdown-item" href="#telegram">Telegram bot</a></li>
+                        </ul>
+                      </div>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="navbar-nav ms-auto">
@@ -59,7 +66,7 @@
     </div>
 
     <div class="col-md-12 custom-div">
-        <h1 class="show-out" id="about">AI algorithm</h1>
+        <h1 class="show-out" id="ai">AI algorithm</h1>
         <p id="text-padding">
             The app provides a game with a bot. The bot analyzes the playing field and when all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and makes all the necessary moves.
             Fitness function parameters:
@@ -87,7 +94,7 @@
     </div>
 
     <div class="col-md-12 custom-div">
-        <h1 class="show-out">Multiplayer</h1>
+        <h1 class="show-out" id="multiplayer">Multiplayer</h1>
         <p id="text-padding">AI algorithm
             When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
             Fitness function parameters:
@@ -108,7 +115,7 @@
     </div>
 
     <div class="col-md-12 custom-div">
-        <h1 class="show-out">Telegram Bot</h1>
+        <h1 class="show-out" id="telegram">Telegram Bot</h1>
         <p id="text-padding">
             When all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and transmits all the necessary moves by emulating keystrokes on the keyboard.
             Fitness function parameters:

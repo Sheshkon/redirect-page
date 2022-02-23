@@ -35,7 +35,6 @@ function uploadFile(target) {
 }
 
 
-
 //$(window).on('load', function () {
 //    $('.img-thumbnail').on('load', function () {
 //       

@@ -1,5 +1,6 @@
 const URL_PARAMS = new URLSearchParams(window.location.search);
 const ROOM = URL_PARAMS.get('room');
+const OPPONENT = URL_PARAMS.get('opponent');
 
 
 ScrollOut({
@@ -45,7 +46,7 @@ function uploadFile(target) {
 //  
 //});
 
-if (ROOM) {
-    window.location.replace(`tetris://${ROOM}`);
-    console.log(`tetris://${ROOM}`);
+if (ROOM && OPPONENT) {
+    window.location.replace(`tetris://${ROOM}=${OPPONENT}`);
+    console.log(`tetris://${ROOM}=${OPPONENT}`);
 }

@@ -48,5 +48,5 @@ function uploadFile(target) {
 
 if (ROOM && OPPONENT) {
     window.location.replace(`tetris://${ROOM}=${OPPONENT}`);
-    console.log(`tetris://${ROOM}=${OPPONENT}`);
+    console.log(`tetris://${ROOM}&${OPPONENT}`);
 }

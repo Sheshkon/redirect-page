@@ -9,7 +9,10 @@
     position: absolute;
     display: none;
 }
-
+#arrow {
+    padding-top: 30px;
+    
+}
 
 .bricks #left-brick,
 #right-brick {

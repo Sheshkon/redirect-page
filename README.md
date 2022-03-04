@@ -1,6 +1,6 @@
 # Tetris page
 
-Web page for [tetris game](https://github.com/vitaliysheshkoff/Tetris-Multiplayer).
+[Web page](https://sheshkon.github.io/tetris-site) for [tetris game](https://github.com/vitaliysheshkoff/Tetris-Multiplayer).
 
 :link: [custom protocol](https://medium.com/swlh/custom-protocol-handling-how-to-8ac41ff651eb)
 

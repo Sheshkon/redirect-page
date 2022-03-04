@@ -224,3 +224,6 @@ hr {
     border-radius:10px ;
 }
 
+table{
+    --bs-table-bg: rgba(0, 0, 0, 0.2) !important;
+}

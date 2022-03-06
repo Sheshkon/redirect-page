@@ -1,6 +1,6 @@
 form {
     margin: 0 auto;
-    width: 30%;
+    width: 45%;
 }
 
 .field {
@@ -111,7 +111,7 @@ textarea::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 600px) {
     form {
-        width: 70%;
+        width: 80% !important;
     }
 }
 

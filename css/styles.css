@@ -33,7 +33,10 @@ dd {
 }
 
 h1 {
-    font-size: 350% !important;
+    font-size: 300% !important;
+}
+#main_title{
+    font-size: 400% !important;
 }
 
 body {
@@ -194,18 +197,6 @@ hr {
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    .custom-div {
-        padding-top: 20%;
-        padding-bottom: 40%;
-    }
-    
-    .main-div{
-        padding-top: 30%;
-        padding-bottom: 150%;
-    }
-}
-
 .dropdown:hover .dropdown-menu {
     background-color: #000000;
     display: block;
@@ -227,3 +218,21 @@ hr {
 table{
     --bs-table-bg: rgba(0, 0, 0, 0.2) !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .custom-div {
+        padding-top: 20%;
+        padding-bottom: 40%;
+    }
+
+    td:nth-child(4), td:nth-child(5),
+    th:nth-child(4), th:nth-child(5){
+        display: none;
+    }
+    
+    .main-div{
+        padding-top: 30%;
+        padding-bottom: 150%;
+    }
+}
+

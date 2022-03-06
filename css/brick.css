@@ -35,13 +35,13 @@
 
 @media only screen and (max-width: 600px) {
     .video-brick {
-        width: 80% !important;
+        /* width: 80% !important; */
         height: auto !important;
         transform: translate(-50px, 50px);
     }
 
     .bricks:hover #right-brick {
-        transform: translate(105px, 210px) rotate(20turn) !important;
+        transform: translate(205px, 210px) rotate(20turn) !important;
     }
 
 }

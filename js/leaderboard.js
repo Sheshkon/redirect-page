@@ -56,9 +56,14 @@ function fill_table(start_pos, end_pos){
 
         var row = `<tr><th scope="row"><font color=${font_color}>` + (i + 1) + '</font></th>';
         
+        var obj_count = 0;
         for (var key in obj) {
             var val = obj[key];
             row += (`<td><font color=${font_color}>` + val + '</font></td>');
+            if (obj_count == 3){
+                break;
+            }
+            obj_count++;
         }
         row += ('</tr>');
         $(row).appendTo(table_body);

@@ -75,10 +75,7 @@ function fill_table(start_pos, end_pos){
         left_arrow.style.opacity = 1;
 
     if (pos >=0 && end_pos != users.length)
-        right_arrow.style.opacity = 1;
-
-    
-    
+        right_arrow.style.opacity = 1;  
 }
 
 

@@ -2,16 +2,18 @@ const socket = io('https://salty-fjord-01783.herokuapp.com', {
     rejectUnauthorized: false,
 });
 const place_color = ["#FFD700", "#C0C0C0", "#CD7F32"];
-const TABLE_PAGE_HEIGHT = 5;
+const TABLE_PAGE_HEIGHT = 10;
 var users = [];
 var pos = 0;
 var lim_pos = 1;
 var table = document.getElementById('leaders_table');
 var leaderboard = document.getElementById('leaderboard');
 var table_body = document.getElementById("table_body");
+var div_arrows = document.getElementById("table_prev_next")
 var left_arrow = document.getElementById("show_prev");
 var right_arrow = document.getElementById("show_next");
 leaderboard.hidden = true;
+div_arrows.hidden = true;
 left_arrow.style.opacity = 0;
 right_arrow.style.display = 0;
 
@@ -35,7 +37,7 @@ function show_table() {
     lim_pos = Math.floor(users.length / TABLE_PAGE_HEIGHT);
     var end_pos = (users.length <= TABLE_PAGE_HEIGHT) ? users.length: TABLE_PAGE_HEIGHT;
     if (users.length > TABLE_PAGE_HEIGHT){
-        
+        div_arrows.hidden = false;
     }
 
     fill_table(0, end_pos)

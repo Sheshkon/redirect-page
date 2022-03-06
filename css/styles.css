@@ -219,6 +219,37 @@ table{
     --bs-table-bg: rgba(0, 0, 0, 0.2) !important;
 }
 
+#table_prev_next{
+    float: right;
+}
+
+#show_prev{
+    right: 100px;
+}
+
+#show_next{
+    /* padding-right: 45px; */
+}
+
+#show_prev,
+#show_next{
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    border-width: 0px;
+    display:inline-flex;
+    filter: invert(75%);
+}
+
+
+#show_prev:hover{
+    filter: invert(0);
+}
+
+#show_next:hover{
+    filter: invert(0);
+}
+
 @media only screen and (max-width: 600px) {
     .custom-div {
         padding-top: 20%;

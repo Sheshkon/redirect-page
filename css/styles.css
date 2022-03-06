@@ -227,10 +227,6 @@ table{
     right: 100px;
 }
 
-#show_next{
-    /* padding-right: 45px; */
-}
-
 #show_prev,
 #show_next{
     width: 45px;

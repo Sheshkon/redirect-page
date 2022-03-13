@@ -12,10 +12,12 @@ var table_body = document.getElementById("table_body");
 var div_arrows = document.getElementById("table_prev_next")
 var left_arrow = document.getElementById("show_prev");
 var right_arrow = document.getElementById("show_next");
+var loading_gif = document.getElementById('loading');
 leaderboard.hidden = true;
 div_arrows.hidden = true;
 left_arrow.style.opacity = 0;
 right_arrow.style.display = 0;
+
 
 
 socket.on('connect', function () {
@@ -24,6 +26,7 @@ socket.on('connect', function () {
     socket.on("leaderboard", players => {
         console.log('get leaderboard');
         users = players;
+        loading_gif.hidden = true;
         show_table();
     });
 });

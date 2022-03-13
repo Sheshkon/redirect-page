@@ -7,7 +7,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
     <title>Tetris</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- jQurery> -->
@@ -29,20 +30,23 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav"> 
+                <div class="navbar-nav">
                     <div class="dropdown">
-                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" class="nav-item nav-link">About</a>
+                        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
+                            class="nav-item nav-link">About</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li><a class="dropdown-item" href="#ai">AI</a></li>
-                          <li><a class="dropdown-item" href="#multiplayer">Multiplayer</a></li>
-                          <li><a class="dropdown-item" href="#telegram">Telegram bot</a></li>
+                            <li><a class="dropdown-item" href="#ai">AI</a></li>
+                            <li><a class="dropdown-item" href="#multiplayer">Multiplayer</a></li>
+                            <li><a class="dropdown-item" href="#telegram">Telegram bot</a></li>
                         </ul>
-                      </div>
+                    </div>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="navbar-nav ms-auto">
-                    <a href="https://t.me/tetris_game_tetris_bot?start=null" class="nav-item nav-link" target="_blank"><img src="https://platform-cdn.sharethis.com/img/telegram.svg" width="32"></a>
-                    <a href="https://github.com/vitaliysheshkoff" class="nav-item nav-link" target="_blank"><img src="img/GitHub-Mark-Light-64px.png" width="32"></a>
+                    <a href="https://t.me/tetris_game_tetris_bot?start=null" class="nav-item nav-link"
+                        target="_blank"><img src="https://platform-cdn.sharethis.com/img/telegram.svg" width="32"></a>
+                    <a href="https://github.com/vitaliysheshkoff" class="nav-item nav-link" target="_blank"><img
+                            src="img/GitHub-Mark-Light-64px.png" width="32"></a>
                 </div>
             </div>
         </div>
@@ -59,38 +63,50 @@
         <div class="container text-center animate__animated animate__zoomInDown ">
             <h1 id="main_title">TETRIS GAME</h1>
             <div class="col-12 d-flex justify-content-center">
-                <a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer#download" target="_blank" class="btn btn-white btn-animate">DOWNLOAD
+                <a href="https://github.com/vitaliysheshkoff/Tetris-Multiplayer#download" target="_blank"
+                    class="btn btn-white btn-animate">DOWNLOAD
                 </a>
             </div>
         </div>
     </div>
 
-    <div class=" custom-div col-md-12" id="leaderboard">
-        <h1 class="show-out" id="telegram">Top Scores</h1>
-        <table id="leaders_table" class="table table-dark table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Place</th>
-                <th scope="col">Nickname</th>
-                <th scope="col">Score</th>
-                <th scope="col">Level</th>
-                <th scope="col">date</th>
-              </tr>
-            </thead>
-            <tbody id="table_body">
-            </tbody>
-          </table>
-          <div id="table_prev_next">
-            <img src="img/left.png" id="show_prev" onclick="show_prev()">
-            <img src="img/right.png" id="show_next" onclick="show_next()">
-          </div>
+
+
+
+
+    <div class="custom-div col-md-12">
+        <div class="show-out"><h1 id="telegram">Top Scores</h1>
+            <img src="img/loading.gif" id="loading">
         </div>
+
+        <div id="leaderboard">
+            <table id="leaders_table" class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Place</th>
+                        <th scope="col">Nickname</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">date</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+            <div id="table_prev_next">
+                <img src="img/left.png" id="show_prev" onclick="show_prev()">
+                <img src="img/right.png" id="show_next" onclick="show_next()">
+            </div>
+        </div>
+    </div>
     </div>
 
     <div class="col-md-12 custom-div">
         <h1 class="show-out" id="ai">AI algorithm</h1>
         <p id="text-padding">
-            The app provides a game with a bot. The bot analyzes the playing field and when all information about the board is known, AI determines all possible positions of the current tetromino on the board. Choose the best possible position via fitness function and makes all the necessary moves.
+            The app provides a game with a bot. The bot analyzes the playing field and when all information about the
+            board is known, AI determines all possible positions of the current tetromino on the board. Choose the best
+            possible position via fitness function and makes all the necessary moves.
             Fitness function parameters:
         </p>
         <dl class="row cent">
@@ -108,7 +124,10 @@
         <div class="bricks">
             <div>
                 <img src="img/brick.png" id="left-brick">
-                <iframe class="video-brick"  src="https://www.youtube.com/embed/d-pElhT-X9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="video-brick" src="https://www.youtube.com/embed/d-pElhT-X9I" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
                 <img src="img/brick.png" id="right-brick">
             </div>
@@ -119,12 +138,16 @@
     <div class="col-md-12 custom-div">
         <h1 class="show-out" id="multiplayer">Multiplayer</h1>
         <p id="text-padding">AI algorithm
-            You can play as much as you want in single player mode, but playing with friends is much more interesting. You can choose any method of connecting via a local network or via the Internet.
+            You can play as much as you want in single player mode, but playing with friends is much more interesting.
+            You can choose any method of connecting via a local network or via the Internet.
         </p>
         <div class="bricks">
             <div>
                 <img src="img/brick.png" id="left-brick">
-                <iframe class="video-brick"  src="https://www.youtube.com/embed/7gcHY0YBn1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="video-brick" src="https://www.youtube.com/embed/7gcHY0YBn1I" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
                 <img src="img/brick.png" id="right-brick">
             </div>
@@ -135,12 +158,16 @@
     <div class="col-md-12 custom-div">
         <h1 class="show-out" id="telegram">Telegram Bot</h1>
         <p id="text-padding">
-            Telegram bot helps to facilitate connection to the game with friends, helps to find a person to play. Also in the bot you can find all the latest news and updates of the game.
+            Telegram bot helps to facilitate connection to the game with friends, helps to find a person to play. Also
+            in the bot you can find all the latest news and updates of the game.
         </p>
-         <div class="bricks">
+        <div class="bricks">
             <div>
                 <img src="img/brick.png" id="left-brick">
-                <iframe class="video-brick"  src="https://www.youtube.com/embed/az_afARnrts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="video-brick" src="https://www.youtube.com/embed/az_afARnrts" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
                 <img src="img/brick.png" id="right-brick">
             </div>
@@ -148,22 +175,24 @@
         <img src="img/arrow.gif" width="120px" id="arrow">
     </div>
 
-       
+
     <div class="contact-form custom-div">
         <h2 class="show-out d-flex justify-content-center" id="contact">CONTACT US</h2>
-        <form action="https://formsubmit.co/71e1063924e26dae26cad8a886e3e6c6" method="POST" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/71e1063924e26dae26cad8a886e3e6c6" method="POST"
+            enctype="multipart/form-data">
             <div class="row">
                 <input type="text" class="field" name="name" placeholder="Your Name" required>
                 <input type="email" class="field" name="email" placeholder="Your Email" required>
                 <textarea class="field" placeholder="Message" name="message" id="message" required></textarea>
                 <div class="inputfile-box">
-                    <input type="file" id="file" class="inputfile" name="attachment" accept="image/png, image/jpeg" onchange='uploadFile(this)'>
-                    <label for="file">                       
-                                <span id="file-name" class="file-box"></span>
-                                <span class="file-button">
-                                    Attach photo
-                                </span>
-                    </label>         
+                    <input type="file" id="file" class="inputfile" name="attachment" accept="image/png, image/jpeg"
+                        onchange='uploadFile(this)'>
+                    <label for="file">
+                        <span id="file-name" class="file-box"></span>
+                        <span class="file-button">
+                            Attach photo
+                        </span>
+                    </label>
                 </div>
                 <input type="hidden" name="_next" value="https://sheshkon.github.io/tetris-site/">
             </div>
@@ -173,17 +202,20 @@
         </form>
     </div>
 
-    
+
 
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <!-- Socket io-->
     <script src="https://cdn.socket.io/3.1.3/socket.io.min.js"
-    integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh"
-    crossorigin="anonymous"></script>
+        integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh"
+        crossorigin="anonymous"></script>
     <!-- My JS -->
     <script src="js/script.js"></script>
     <script src="js/leaderboard.js"></script>
 
 </body>
+
 </html>

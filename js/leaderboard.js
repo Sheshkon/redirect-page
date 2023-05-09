@@ -1,4 +1,4 @@
-const socket = io('https://salty-fjord-01783.herokuapp.com', {
+const socket = io('tetrisserver-production.up.railway.app', {
     rejectUnauthorized: false,
 });
 const place_color = ["#FFD700", "#C0C0C0", "#CD7F32"];
